@@ -1,8 +1,9 @@
 # Apache Spark com Delta Lake e Apache Iceberg
 
 !!! info "Trabalho de Pesquisa — Engenharia de Dados"
-    **Curso:** Engenharia de Software — SATC · **Professor:** Jorge Luiz da Silva
-    **Equipe:** Murilo Mandelli e Augusto Benedetti
+    - **Curso:** Engenharia de Software — SATC
+    - **Professor:** Jorge Luiz da Silva
+    - **Equipe:** Murilo Mandelli e Augusto Benedetti
 
 ## Objetivo
 
