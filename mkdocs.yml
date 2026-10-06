@@ -1,0 +1,74 @@
+site_name: Apache Spark com Delta Lake e Apache Iceberg
+site_description: Trabalho de pesquisa da disciplina de Engenharia de Dados (SATC)
+site_author: Murilo Mandelli e Augusto Benedetti
+# TODO: troque SEU-USUARIO pelo usuário/organização do GitHub dono do repositório
+site_url: https://SEU-USUARIO.github.io/spark-delta-iceberg/
+repo_url: https://github.com/SEU-USUARIO/spark-delta-iceberg
+repo_name: spark-delta-iceberg
+edit_uri: ""
+
+nav:
+  - Contexto do trabalho: index.md
+  - Cenário e dados: cenario.md
+  - Apache Spark (PySpark): spark.md
+  - Delta Lake: delta.md
+  - Apache Iceberg: iceberg.md
+  - Delta x Iceberg: comparativo.md
+  - Referências: referencias.md
+
+theme:
+  name: material
+  language: pt-BR
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search:
+      lang: pt

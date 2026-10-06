@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 300" width="1030" height="300" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="1030" height="300" fill="#ffffff"/>
+  <text x="515" y="24" text-anchor="middle" font-size="15" font-weight="600" fill="#1f2937">Modelo ER — Seguradora de veículos (schema seguradora)</text>
+
+  <!-- Relacionamentos -->
+  <g fill="none" stroke="#475569" stroke-width="1.6">
+    <path d="M230 86 H255 V110 H280"/>
+    <path d="M490 230 H515 V86 H540"/>
+    <path d="M750 86 H775 V110 H800"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#b45309">
+    <text x="236" y="80">1</text><text x="266" y="104">N</text>
+    <text x="494" y="224">N</text><text x="530" y="80">1</text>
+    <text x="756" y="80">1</text><text x="786" y="104">N</text>
+  </g>
+
+  <!-- cliente -->
+  <g transform="translate(20,40)">
+    <rect width="210" height="164" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+    <path d="M0 6 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v28 h-210 z" fill="#1e3a8a"/>
+    <text x="105" y="22" text-anchor="middle" fill="#fff" font-weight="700">cliente</text>
+    <g fill="#0f172a">
+      <text x="10" y="50" font-weight="700">🔑 cd_cliente</text><text x="200" y="50" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="74">nome</text><text x="200" y="74" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="98">cpf</text><text x="200" y="98" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="122">sexo</text><text x="200" y="122" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="146">dt_nascimento</text><text x="200" y="146" text-anchor="end" fill="#64748b">DATE</text>
+    </g>
+  </g>
+
+  <!-- apolice -->
+  <g transform="translate(280,40)">
+    <rect width="210" height="212" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+    <path d="M0 6 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v28 h-210 z" fill="#1e3a8a"/>
+    <text x="105" y="22" text-anchor="middle" fill="#fff" font-weight="700">apolice</text>
+    <g fill="#0f172a">
+      <text x="10" y="50" font-weight="700">🔑 cd_apolice</text><text x="200" y="50" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="74" fill="#b45309">FK cd_cliente</text><text x="200" y="74" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="98">dt_inicio_vigencia</text><text x="200" y="98" text-anchor="end" fill="#64748b">TIMESTAMP</text>
+      <text x="10" y="122">dt_fim_vigencia</text><text x="200" y="122" text-anchor="end" fill="#64748b">TIMESTAMP</text>
+      <text x="10" y="146">vl_cobertura</text><text x="200" y="146" text-anchor="end" fill="#64748b">DECIMAL(10,2)</text>
+      <text x="10" y="170">vl_franquia</text><text x="200" y="170" text-anchor="end" fill="#64748b">DECIMAL(10,2)</text>
+      <text x="10" y="194" fill="#b45309">FK placa</text><text x="200" y="194" text-anchor="end" fill="#64748b">STRING</text>
+    </g>
+  </g>
+
+  <!-- carro -->
+  <g transform="translate(540,40)">
+    <rect width="210" height="164" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+    <path d="M0 6 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v28 h-210 z" fill="#1e3a8a"/>
+    <text x="105" y="22" text-anchor="middle" fill="#fff" font-weight="700">carro</text>
+    <g fill="#0f172a">
+      <text x="10" y="50" font-weight="700">🔑 placa</text><text x="200" y="50" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="74">cd_modelo</text><text x="200" y="74" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="98">chassi</text><text x="200" y="98" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="122">ano</text><text x="200" y="122" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="146">cor</text><text x="200" y="146" text-anchor="end" fill="#64748b">STRING</text>
+    </g>
+  </g>
+
+  <!-- sinistro -->
+  <g transform="translate(800,40)">
+    <rect width="210" height="164" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/>
+    <path d="M0 6 a6 6 0 0 1 6 -6 h198 a6 6 0 0 1 6 6 v28 h-210 z" fill="#1e3a8a"/>
+    <text x="105" y="22" text-anchor="middle" fill="#fff" font-weight="700">sinistro</text>
+    <g fill="#0f172a">
+      <text x="10" y="50" font-weight="700">🔑 cd_sinistro</text><text x="200" y="50" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="74" fill="#b45309">FK placa</text><text x="200" y="74" text-anchor="end" fill="#64748b">STRING</text>
+      <text x="10" y="98">dt_sinistro</text><text x="200" y="98" text-anchor="end" fill="#64748b">TIMESTAMP</text>
+      <text x="10" y="122">local_sinistro</text><text x="200" y="122" text-anchor="end" fill="#64748b">INT</text>
+      <text x="10" y="146">condutor</text><text x="200" y="146" text-anchor="end" fill="#64748b">STRING</text>
+    </g>
+  </g>
+
+  <text x="20" y="284" font-size="12" fill="#475569">Um cliente possui N apólices · cada apólice cobre 1 carro · um carro pode ter N sinistros.  (Spark não impõe PK/FK: as chaves são lógicas.)</text>
+</svg>

@@ -1,0 +1,49 @@
+[project]
+name = "spark-delta-iceberg"
+version = "0.1.0"
+description = "Trabalho de Engenharia de Dados (SATC): Apache Spark com Delta Lake e Apache Iceberg"
+readme = "README.md"
+authors = [
+    { name = "Murilo Mandelli" },
+    { name = "Augusto Benedetti" },
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pyspark==3.5.9",
+    "delta-spark==3.3.3",
+    "jupyterlab>=4.6.4",
+    "ipykernel>=7.4.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mkdocs-material>=9.7.7",
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+    "taskipy>=1.14.1",
+]
+
+# Atalhos: uv run task <nome>
+[tool.taskipy.tasks]
+lab = "jupyter lab --notebook-dir=notebooks"
+dados = "python scripts/converter_sql_para_csv.py data/source/script_relacional.sql data/raw"
+notebooks = "jupyter nbconvert --to notebook --execute --inplace notebooks/*.ipynb"
+test = "pytest -v"
+lint = "ruff check . && ruff format --check ."
+format = "ruff check --fix . && ruff format ."
+docs = "mkdocs serve"
+deploy = "mkdocs gh-deploy --force"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["notebooks", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
