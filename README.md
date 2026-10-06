@@ -11,7 +11,7 @@ O projeto cria um ambiente local de **PySpark + JupyterLab** e demonstra, em doi
 os comandos **INSERT**, **UPDATE**, **DELETE** (e MERGE / *time travel*) em tabelas
 **Delta Lake** e **Apache Iceberg**, usando o cenário de uma seguradora de veículos.
 
-📘 **Documentação (MkDocs):** https://SEU-USUARIO.github.io/spark-delta-iceberg/
+📘 **Documentação (MkDocs):** https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/
 
 👥 **Equipe:** Murilo Mandelli · Augusto Benedetti
 
@@ -109,8 +109,8 @@ uv --version
 ### 4. Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/spark-delta-iceberg.git
-cd spark-delta-iceberg
+git clone https://github.com/MuriloMandelli/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg.git
+cd Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg
 ```
 
 > [!TIP]

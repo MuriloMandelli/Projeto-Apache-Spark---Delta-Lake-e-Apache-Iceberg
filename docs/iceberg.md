@@ -247,4 +247,4 @@ Depois do rollback: 10001
 
 !!! tip "Notebook completo"
     Todos os comandos e saídas estão no notebook
-    [`notebooks/02_spark_apache_iceberg.ipynb`](https://github.com/SEU-USUARIO/spark-delta-iceberg/blob/main/notebooks/02_spark_apache_iceberg.ipynb).
+    [`notebooks/02_spark_apache_iceberg.ipynb`](https://github.com/MuriloMandelli/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/blob/main/notebooks/02_spark_apache_iceberg.ipynb).

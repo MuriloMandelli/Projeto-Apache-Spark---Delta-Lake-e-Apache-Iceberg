@@ -264,4 +264,4 @@ Depois do RESTORE: 10001
 
 !!! tip "Notebook completo"
     Todos os comandos e saídas estão no notebook
-    [`notebooks/01_spark_delta_lake.ipynb`](https://github.com/SEU-USUARIO/spark-delta-iceberg/blob/main/notebooks/01_spark_delta_lake.ipynb).
+    [`notebooks/01_spark_delta_lake.ipynb`](https://github.com/MuriloMandelli/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/blob/main/notebooks/01_spark_delta_lake.ipynb).
