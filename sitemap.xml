@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/cenario/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/comparativo/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/delta/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/iceberg/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/referencias/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+    <url>
+         <loc>https://murilomandelli.github.io/Projeto-Apache-Spark---Delta-Lake-e-Apache-Iceberg/spark/</loc>
+         <lastmod>2026-10-06</lastmod>
+    </url>
+</urlset>
