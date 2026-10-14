@@ -27,6 +27,7 @@ os comandos **INSERT**, **UPDATE**, **DELETE** (e MERGE / *time travel*) em tabe
 - [Testes e qualidade de código](#testes-e-qualidade-de-código)
 - [Documentação (MkDocs)](#documentação-mkdocs)
 - [Solução de problemas](#solução-de-problemas)
+- [Referências](#referências)
 
 ## Aviso
 
@@ -300,6 +301,33 @@ export SPARK_LOCAL_IP=127.0.0.1
 ```
 
 </details>
+
+## Referências
+
+**Documentação oficial**
+
+- [Apache Spark 3.5 — Documentação](https://spark.apache.org/docs/3.5.6/) e [PySpark API Reference](https://spark.apache.org/docs/3.5.6/api/python/index.html)
+- [Delta Lake — Quickstart](https://docs.delta.io/latest/quick-start.html)
+- [Delta Lake — Table deletes, updates and merges](https://docs.delta.io/latest/delta-update.html)
+- [Delta Lake — Table utility commands (history, restore, vacuum)](https://docs.delta.io/latest/delta-utility.html)
+- [Apache Iceberg — Spark Quickstart](https://iceberg.apache.org/spark-quickstart/)
+- [Apache Iceberg — Spark Writes (UPDATE/DELETE/MERGE)](https://iceberg.apache.org/docs/latest/spark-writes/)
+- [Apache Iceberg — Spark Queries e tabelas de metadados](https://iceberg.apache.org/docs/latest/spark-queries/)
+- [Apache Iceberg — Spark Procedures](https://iceberg.apache.org/docs/latest/spark-procedures/)
+- [Apache Iceberg — Especificação da tabela](https://iceberg.apache.org/spec/)
+
+**Ferramentas**
+
+- [uv](https://docs.astral.sh/uv/) · [JupyterLab](https://jupyterlab.readthedocs.io/) · [MkDocs](https://www.mkdocs.org/) · [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) · [WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
+
+**Material da disciplina**
+
+- [jlsilva01/spark-delta](https://github.com/jlsilva01/spark-delta) e [jlsilva01/spark-iceberg](https://github.com/jlsilva01/spark-iceberg) — projetos de referência do professor
+- Canal **DataWay BR** no YouTube
+- *Python para Engenharia de Dados — material de apoio* (padrão de projeto, uv, MkDocs, taskipy)
+- Laboratório de Modelagem Dimensional (`script_relacional.sql`) — origem do dataset
+
+**Uso de IA:** conforme orientação do professor, usamos IA generativa (Claude) como apoio na pesquisa, no código e na documentação. Todo o código foi executado e validado no ambiente descrito acima.
 
 ---
 
